@@ -14,3 +14,12 @@
 Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
+
+Route::get('search', function() {
+    $query = ''; // <-- Change the query for testing.
+
+    $users = App\Models\User::search($query)->get();
+
+    return $users;
+});
+
