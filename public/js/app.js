@@ -109707,9 +109707,9 @@ __webpack_require__(/*! ./forms/bootstrap */ "./spark/resources/assets/js/forms/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /private/var/www/superads/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /private/var/www/superads/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /private/var/www/superads/resources/sass/app-rtl.scss */"./resources/sass/app-rtl.scss");
+__webpack_require__(/*! /Users/melandri/code/superads/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/melandri/code/superads/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/melandri/code/superads/resources/sass/app-rtl.scss */"./resources/sass/app-rtl.scss");
 
 
 /***/ })

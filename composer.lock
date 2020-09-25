@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a3c866610705a357c87a570850cf2b1",
+    "content-hash": "aca50697c42222d5c9f80321886b0e21",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1491,6 +1491,65 @@
             "transport-options": {
                 "relative": true
             }
+        },
+        {
+            "name": "laravel/telescope",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/telescope.git",
+                "reference": "4bd0a8b01b889c7704cd0a1d04a849c8da993f43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/4bd0a8b01b889c7704cd0a1d04a849c8da993f43",
+                "reference": "4bd0a8b01b889c7704cd0a1d04a849c8da993f43",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.0",
+                "php": "^7.3",
+                "symfony/var-dumper": "^5.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "orchestra/testbench": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Telescope\\TelescopeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Telescope\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "mohamed@laravel.com"
+                }
+            ],
+            "description": "An elegant debug assistant for the Laravel framework.",
+            "keywords": [
+                "debugging",
+                "laravel",
+                "monitoring"
+            ],
+            "time": "2020-09-22T16:49:01+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3014,16 +3073,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.54.0",
+            "version": "v7.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3"
+                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3",
-                "reference": "3a5cff6ce6f5f2f0fc75164d3677bd5dc3e96fe3",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
+                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
                 "shasum": ""
             },
             "require": {
@@ -3067,7 +3126,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-09-23T21:48:00+00:00"
+            "time": "2020-09-25T18:15:04+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

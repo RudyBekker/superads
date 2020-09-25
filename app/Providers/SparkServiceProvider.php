@@ -13,8 +13,8 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $details = [
-        'vendor' => 'Your Company',
-        'product' => 'Your Product',
+        'vendor' => 'SuperAds',
+        'product' => 'SuperAds',
         'street' => 'PO Box 111',
         'location' => 'Your Town, NY 12345',
         'phone' => '555-555-5555',
@@ -25,7 +25,7 @@ class SparkServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $sendSupportEmailsTo = null;
+    protected $sendSupportEmailsTo = 'rudy@superagency.io';
 
     /**
      * All of the application developer e-mail addresses.
@@ -33,7 +33,7 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $developers = [
-        //
+        'rudy@superagency.io'
     ];
 
     /**
@@ -41,7 +41,7 @@ class SparkServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $usesApi = true;
+    protected $usesApi = false;
 
     /**
      * Bootstrap any application services.
@@ -52,17 +52,18 @@ class SparkServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        Spark::noCardUpFront()->trialDays(10);
+        Spark::noCardUpFront()->trialDays(3);
 
         Spark::freePlan()
             ->features([
-                'First', 'Second', 'Third'
+                '15 Searches', 'Facebook', 'Live Support'
             ]);
 
         Spark::plan('Basic', 'provider-id-1')
-            ->price(10)
+            ->price(249)
+            ->yearly()
             ->features([
-                'First', 'Second', 'Third'
+                'Unlimited Searches', 'Facebook', 'Lifetime Access'
             ]);
     }
 

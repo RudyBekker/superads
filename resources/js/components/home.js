@@ -3,19 +3,19 @@ import VueMomentsAgo from "vue-moments-ago";
 import "instantsearch.css/themes/algolia-min.css";
 
 Vue.component("home", {
-  data() {
-    return {
-      searchClient: algoliasearch(
-        "190229ZBIS",
-        "ca76d001d309f417d0f6e99a8c141edf"
-      ),
-    };
-  },
-  components: {
-    VueMomentsAgo,
-  },
-  props: ["user"],
-  template: `
+    data() {
+        return {
+            searchClient: algoliasearch(
+                "190229ZBIS",
+                "ca76d001d309f417d0f6e99a8c141edf"
+            ),
+        };
+    },
+    components: {
+        VueMomentsAgo,
+    },
+    props: ["user"],
+    template: `
     <ais-instant-search :search-client="searchClient" index-name="fbads1">
         <ais-search-box class="py-3" />
         <ais-hits>
@@ -74,7 +74,7 @@ Vue.component("home", {
         <ais-pagination />
     </ais-instant-search>
 `,
-  mounted() {
-    //
-  },
+    mounted() {
+        //
+    },
 });
