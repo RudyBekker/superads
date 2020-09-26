@@ -113,11 +113,6 @@ $colors: (
   }
   .article-content {
     margin-top: 10px;
-    p {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
   }
   .article-social {
     a {
@@ -205,16 +200,10 @@ $colors: (
         margin-bottom: 10px;
         h2 {
           line-height: 22px;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
         }
         a {
           font-size: 16px;
           font-weight: 600;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
         }
       }
       p {
@@ -234,13 +223,72 @@ $colors: (
       .user-detail-name {
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis;
         a {
           font-weight: 700;
         }
       }
     }
   }
+}
+
+.read-more {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 25px;
+  &:after {
+    content: "Read More";
+    position: absolute;
+    left: 12px;
+    bottom: 65px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+}
+.read-less {
+  text-overflow: unset;
+  white-space: normal;
+  overflow: visible;
+  &:after {
+    content: "Read Less";
+    position: relative;
+    left: 12px;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 13px;
+  }
+}
+
+.title-read-more {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 25px;
+  &:after {
+    content: "Read More";
+    position: absolute;
+    left: 12px;
+    top: 110px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+}
+.title-read-less {
+  text-overflow: unset;
+  white-space: normal;
+  overflow: visible;
+  &:after {
+    content: "Read Less";
+    position: relative;
+    left: 12px;
+    top: 0;
+    cursor: pointer;
+    font-size: 13px;
+  }
+}
+
+.sentinel {
+  list-style-type: none;
 }
 
 @include media-breakpoint-down(xs) {
