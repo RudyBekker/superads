@@ -18,10 +18,10 @@ require('spark-bootstrap');
 
 require('./components/bootstrap');
 
-import algoliasearch from 'algoliasearch/lite';
-window.algoliasearch = algoliasearch;
-
 import InstantSearch from 'vue-instantsearch';
+import VueObserveVisibility from 'vue-observe-visibility';
+
+Vue.use(VueObserveVisibility);
 Vue.use(InstantSearch);
 
 var app = new Vue({

@@ -13,6 +13,7 @@
     "cross-env": "^5.1",
     "dinero.js": "^1.6.0",
     "instantsearch.css": "^7.4.5",
+    "instantsearch.js": "^4.8.2",
     "jquery": "^3.2",
     "laravel-mix": "^4.0.7",
     "lodash": "^4.17.4",
@@ -28,6 +29,7 @@
     "vue": "^2.6.12",
     "vue-instantsearch": "^3.2.0",
     "vue-moments-ago": "^0.2.0",
+    "vue-observe-visibility": "^0.4.6",
     "vue-server-renderer": "^2.6.12",
     "vue-template-compiler": "^2.6.10"
   }
