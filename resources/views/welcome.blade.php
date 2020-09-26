@@ -42,7 +42,9 @@
                                     <div class="reveal-from-top" data-reveal-delay="450"><a class="tbuttonn fbuttonl" href="/register">Get started</a></div>
                                 </div>
                             </div>
-                            <div class="rg tillustration-element-n reveal-from-bottom" data-reveal-delay="600"><img class="sb" src="landingx/images/hero-image.png" alt="Hero image" width="896" height="504" /></div>
+                            <div class="rg tillustration-element-n reveal-from-bottom" data-reveal-delay="600">
+                                <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/58790376b50f41f4bd8bcef09f7fdbb9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                            </div>
                         </div>
                     </div>
                 </section>
