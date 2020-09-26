@@ -38,10 +38,10 @@ Vue.component("home", {
                 </div>
                 <div class="article-header">
                     <div class="article-image">
-                        <video controls style="width: 100%;" :poster="'https://media.poweradspy.com/' + item.image_video_url">
-                            <source :src="'https://media.poweradspy.com/' + item.image_video_url">
-                            Your browser does not support the video tag.
-                        </video>
+                        <picture v-if="item.ad_type === 'IMAGE'">
+                            <img :src="'https://media.poweradspy.com/' + item.image_video_url" :alt="item.ad_title" style="width: 100%;">
+                        </picture>
+                        <embed v-if="item.ad_type === 'VIDEO'" type="video/webm" :src="'https://media.poweradspy.com/' + item.image_video_url" width="100%" height="100%" />
                     </div>
                 </div>
                 <div class="article-content">
