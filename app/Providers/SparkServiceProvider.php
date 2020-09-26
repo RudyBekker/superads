@@ -61,7 +61,6 @@ class SparkServiceProvider extends ServiceProvider
 
         Spark::plan('Basic', 'provider-id-1')
             ->price(249)
-            ->yearly()
             ->features([
                 'Unlimited Searches', 'Facebook', 'Lifetime Access'
             ]);
