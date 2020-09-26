@@ -54,13 +54,9 @@ class SparkServiceProvider extends ServiceProvider
 
         Spark::noCardUpFront()->trialDays(3);
 
-        Spark::freePlan()
-            ->features([
-                '15 Searches', 'Facebook', 'Live Support'
-            ]);
-
-        Spark::plan('Basic', 'provider-id-1')
-            ->price(249)
+        Spark::plan('Basic Plan', 'prod_I5rEKvSff7L5Pr')
+            ->price(87)
+            ->yearly()
             ->features([
                 'Unlimited Searches', 'Facebook', 'Lifetime Access'
             ]);

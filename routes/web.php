@@ -15,7 +15,7 @@ Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
 
-Route::get('search', function() {
+Route::get('search', function () {
     $query = ''; // <-- Change the query for testing.
 
     $users = App\Models\User::search($query)->get();
@@ -23,3 +23,6 @@ Route::get('search', function() {
     return $users;
 });
 
+Route::get('/email-extractor', function () {
+    return view('email-extractor');
+});
