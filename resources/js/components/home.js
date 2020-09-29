@@ -61,10 +61,10 @@ Vue.component("home", {
                     </div>
                 </div>
                 <div class="p-4">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    <h1 :class="[item.ad_title && item.ad_title.length > 10 ? 'title-read-more' : '', 'title-font', 'text-lg', 'font-medium', 'text-gray-900', 'mb-3']" @click="$event.target.classList.toggle('title-read-less')" title="Click to Read More">
                         {{item.ad_title}}
                     </h1>
-                    <p class="leading-relaxed mb-3">
+                    <p :class="[item.ad_text && item.ad_text.length > 10 ? 'title-read-more' : '', 'leading-relaxed', 'mb-3']" @click="$event.target.classList.toggle('title-read-less')" title="Click to Read More">
                         {{item.ad_text}}
                     </p>
                     <div class="flex items-center flex-wrap">
