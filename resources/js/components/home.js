@@ -52,9 +52,9 @@ Vue.component("home", {
                 <div class="flex space-x-4 pl-4 pr-4 pt-4">
                     <img alt="image" class="rounded-full h-12 w-12" :src="'https://media.poweradspy.com/' + item.post_owner_image.replace('https://media.poweradspy.com/', '')">
                     <div class="flex-1 space-y-1 py-1">
-                        <div class="h-4 rounded">{{item.post_owner}}</div>
+                        <div class="h-auto rounded">{{item.post_owner}}</div>
                         <div class="space-y-2">
-                            <div class="h-4 rounded">
+                            <div class="h-auto rounded">
                                 <vue-moments-ago prefix="posted" suffix="ago" :date="item.post_date"></vue-moments-ago>
                             </div>
                         </div>
