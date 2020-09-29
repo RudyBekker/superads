@@ -52,11 +52,10 @@ class SparkServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        Spark::noCardUpFront()->trialDays(3);
-
-        Spark::plan('Basic Plan', 'prod_I5rEKvSff7L5Pr')
+        Spark::plan('Basic Plan', 'Basic SuperAds')
             ->price(87)
             ->yearly()
+            ->trialDays(3)
             ->features([
                 'Unlimited Searches', 'Facebook', 'Lifetime Access'
             ]);
