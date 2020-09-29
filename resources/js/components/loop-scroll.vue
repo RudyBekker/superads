@@ -1,6 +1,6 @@
 <template>
-<div class="row" v-if="state">
-    <div class="col-xs-12 col-md-4 col-lg-4" v-for="hit in state.hits" :key="hit.objectID">
+<div class="flex flex-wrap -m-4" v-if="state">
+    <div class="p-3 md:w-1/3" v-for="hit in state.hits" :key="hit.objectID">
         <slot name="item" :item="hit"> </slot>
     </div>
     <div class="sentinel" v-observe-visibility="visibilityChanged"></div>
@@ -15,9 +15,11 @@ import {
     connectInfiniteHits
 } from "instantsearch.js/es/connectors";
 export default {
-    mixins: [createWidgetMixin({
-        connector: connectInfiniteHits
-    })],
+    mixins: [
+        createWidgetMixin({
+            connector: connectInfiniteHits,
+        }),
+    ],
     methods: {
         visibilityChanged(isVisible) {
             if (isVisible && !this.state.isLastPage) {
