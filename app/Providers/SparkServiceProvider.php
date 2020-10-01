@@ -52,7 +52,10 @@ class SparkServiceProvider extends ServiceProvider
     {
         parent::boot();
 
+        Spark::noCardUpFront()->trialDays(365);
+
         Spark::plan('Basic Plan', 'Basic SuperAds')
+            ->archived()
             ->price(87)
             ->yearly()
             ->trialDays(3)
